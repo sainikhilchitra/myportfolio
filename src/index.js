@@ -1,17 +1,44 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import {createRoot} from 'react-dom/client'
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './App.css'
+// root.render(<App/>);
+import React, { useState } from 'react';
+const root=createRoot(document.getElementById('root'));
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function AgeChecker() {
+  const [age, setAge] = useState('');
+  const [error, setError] = useState('');
+  const [message, setMessage] = useState('');
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (Number(age) < 18) {
+      setError('You must be at least 18 years old.');
+      setMessage('');
+    } else {
+      setError('');
+      setMessage('Hello ✅');
+    }
+  };
+
+  return (
+    <div style={{ padding: '20px' }}>
+      <h2>Enter Your Age</h2>
+      <form onSubmit={handleSubmit}>
+        <input
+          id="age"
+          type="number"
+          value={age}
+          onChange={(e) => setAge(e.target.value)}
+          placeholder="Enter age"
+        />
+        <button id="submit" type="submit">Submit</button>
+      </form>
+
+      {error && <p id="error" style={{ color: 'red' }}>{error}</p>}
+      {message && <p style={{ color: 'green' }}>{message}</p>}
+    </div>
+  );
+}
+root.render(<AgeChecker/>);
