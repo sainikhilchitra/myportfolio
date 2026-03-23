@@ -9,9 +9,10 @@ export default function Journey() {
       location: "Hyderabad, Telangana",
       date: "Jan 2026",
       desc: [
-        "Developed an analytics dashboard for organizations to visualize and monitor student performance metrics.",
-        "Implemented role-based access control (RBAC) with secure authentication and authorization.",
-        "Designed and built user management features including onboarding and profile management."
+        "Contributed to the development of Upadyai, an end-to-end interview preparation platform offering DSA practice, technical/HR interviews, and performance analytics for students and institutions.",
+        "Developed organization-level analytics dashboards enabling institutions to monitor student performance, track progress, and view global leaderboard rankings.",
+        "Implemented scoring mechanisms for DSA problems, designing evaluation logic to assess problem-solving performance and generate comparative rankings.",
+        "Designed and implemented resume upload functionality with text extraction pipelines, allowing users to upload multiple resumes and store parsed data for further analysis."
       ]
     },
     {
