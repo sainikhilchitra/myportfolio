@@ -1,4 +1,4 @@
-import { faBriefcase, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faGraduationCap, faMapMarkerAlt, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Journey() {
@@ -7,69 +7,127 @@ export default function Journey() {
       title: "Software Development Engineer (SDE Intern)",
       company: "Sentiantal Private Limited",
       location: "Hyderabad, Telangana",
-      date: "Jan 2026",
+      date: "Jan 2026 – Present",
       desc: [
-        "Contributed to the development of Upadyai, an end-to-end interview preparation platform offering DSA practice, technical/HR interviews, and performance analytics for students and institutions.",
-        "Developed organization-level analytics dashboards enabling institutions to monitor student performance, track progress, and view global leaderboard rankings.",
-        "Implemented scoring mechanisms for DSA problems, designing evaluation logic to assess problem-solving performance and generate comparative rankings.",
-        "Designed and implemented resume upload functionality with text extraction pipelines, allowing users to upload multiple resumes and store parsed data for further analysis."
-      ]
+        "Improved HR interview module by fixing UI issues in audio/video sessions, ensuring smooth real-time experience across 100+ runs.",
+        "Supported 100+ interview sessions, stabilizing system performance under real usage.",
+        "Built dashboards for performance tracking, user management, and leaderboards.",
+        "Designed a rule-based DSA evaluation system with penalties for AI usage, hints, and time.",
+        "Contributed to a deployed platform currently used by 38+ users.",
+      ],
+      tech: ["React.js", "Analytics", "Data Structures", "System Design"],
     },
     {
       title: "DSA Mentor",
       company: "Smart Interviews",
       location: "Hyderabad, Telangana",
-      date: "Feb 2026",
+      date: "Feb 2026 – Present",
       desc: [
-        "Mentoring students in Data Structures and Algorithms through structured problem-solving sessions.",
-        "Providing personalized guidance for technical interview preparation."
-      ]
-    }
+        "Assisted in conducting 5 offline DSA sessions for batches of 130+ students, supporting faculty-led instruction and clarifying student doubts in real time.",
+        "Guided students through problem-solving approaches and debugging techniques, helping improve understanding of core algorithmic concepts.",
+      ],
+      tech: ["Algorithms", "Problem Solving", "Mentorship", "C/Java"],
+    },
   ];
 
   const education = [
     {
       title: "Bachelor of Technology",
       school: "B V Raju Institute of Technology",
-      subtitle: "Computer Science and Engineering (Data Science)",
-      date: "2023 - 2027",
-      desc: ["CGPA: 8.92"]
-    }
+      subtitle: "Computer Science & Engineering (Data Science)",
+      date: "2023 – 2027",
+      desc: ["CGPA: 8.92"],
+      tech: ["Data Science", "AI/ML", "DSA"],
+    },
   ];
 
   return (
     <section className="journey" id="journey">
       <h2 className="section-title">My Journey</h2>
-      <p className="section-subtitle">A timeline of my professional experience and academic background.</p>
+      <p className="section-subtitle">
+        A timeline of my professional experience and academic background.
+      </p>
 
       <div className="journey-container">
+        {/* ── Experience Column ── */}
         <div className="journey-column">
-          <h2><FontAwesomeIcon icon={faBriefcase} /> Experience</h2>
-          <div className="timeline">
+          <div className="journey-col-header">
+            <div className="journey-col-icon exp-icon">
+              <FontAwesomeIcon icon={faBriefcase} />
+            </div>
+            <h3 className="journey-col-title">Experience</h3>
+          </div>
+
+          <div className="v-timeline">
             {experience.map((exp, index) => (
-              <div key={index} className="timeline-item glass-effect">
-                <div className="timeline-date">{exp.date}</div>
-                <h3 className="timeline-title">{exp.title}</h3>
-                <div className="timeline-subtitle">{exp.company} | {exp.location}</div>
-                <ul className="timeline-desc">
-                  {exp.desc.map((item, i) => <li key={i}>{item}</li>)}
-                </ul>
+              <div key={index} className="v-timeline-item">
+                <div className="v-dot" />
+                <div className="v-card glass-effect">
+                  <div className="v-card-date">
+                    <FontAwesomeIcon icon={faCalendarAlt} />
+                    <span>{exp.date}</span>
+                  </div>
+                  <h4 className="v-card-title">{exp.title}</h4>
+                  <div className="v-card-sub">
+                    <FontAwesomeIcon icon={faMapMarkerAlt} />
+                    <span>
+                      {exp.company} &middot; {exp.location}
+                    </span>
+                  </div>
+                  <ul className="v-card-list">
+                    {exp.desc.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                  <div className="v-card-tags">
+                    {exp.tech.map((t, i) => (
+                      <span key={i} className="tech-tag">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </div>
 
+        {/* ── Education Column ── */}
         <div className="journey-column">
-          <h2><FontAwesomeIcon icon={faGraduationCap} /> Education</h2>
-          <div className="timeline">
+          <div className="journey-col-header">
+            <div className="journey-col-icon edu-icon">
+              <FontAwesomeIcon icon={faGraduationCap} />
+            </div>
+            <h3 className="journey-col-title">Education</h3>
+          </div>
+
+          <div className="v-timeline">
             {education.map((edu, index) => (
-              <div key={index} className="timeline-item glass-effect">
-                <div className="timeline-date">{edu.date}</div>
-                <h3 className="timeline-title">{edu.title}</h3>
-                <div className="timeline-subtitle">{edu.school}</div>
-                <p className="timeline-subtitle" style={{color: 'var(--primary)', fontWeight: '600'}}>{edu.subtitle}</p>
-                <div className="timeline-desc">
-                  {edu.desc.map((item, i) => <p key={i}>{item}</p>)}
+              <div key={index} className="v-timeline-item">
+                <div className="v-dot edu-dot" />
+                <div className="v-card glass-effect">
+                  <div className="v-card-date">
+                    <FontAwesomeIcon icon={faCalendarAlt} />
+                    <span>{edu.date}</span>
+                  </div>
+                  <h4 className="v-card-title">{edu.title}</h4>
+                  <div className="v-card-sub">
+                    <FontAwesomeIcon icon={faMapMarkerAlt} />
+                    <span>{edu.school}</span>
+                  </div>
+                  <p className="v-card-spec">{edu.subtitle}</p>
+                  {edu.desc.map((item, i) => (
+                    <p key={i} className="v-card-cgpa">
+                      {item}
+                    </p>
+                  ))}
+                  <div className="v-card-tags">
+                    {edu.tech.map((t, i) => (
+                      <span key={i} className="tech-tag">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}

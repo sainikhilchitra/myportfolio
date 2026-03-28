@@ -7,8 +7,12 @@ export default function Home() {
     <section className="home" id="home">
       <div className="home-content">
         <div className="home-text">
-          <h1 className="home-heading">Sai Nikhil Chitra</h1>
-          <h2 className="home-role">Full Stack Web Developer</h2>
+          <div className="home-badge">B.Tech CSE (Data Science)</div>
+          <h1 className="home-heading">
+            Hi, I&apos;m <br />
+            <span className="home-name-gradient">Sai Nikhil Chitra</span>
+          </h1>
+          <h2 className="home-role">Web Developer</h2>
           <p className="home-desc">
             A passionate Computer Science undergraduate skilled in building scalable 
             full stack web applications. Focused on clean code, seamless user 
@@ -16,7 +20,7 @@ export default function Home() {
           </p>
           <div className="home-buttons">
           <a href="#projects" className="btn btn-primary">
-            View Projects
+            View Projects &nbsp;→
           </a>
           <a href="/resume.pdf" download="Sai_Nikhil_Resume.pdf" className="btn btn-outline">
             <FontAwesomeIcon icon={faExternalLinkAlt} /> Resume

@@ -7,6 +7,7 @@ import Journey from './Journey';
 import Certifications from './Certifications';
 import Projects from './Projects';
 import Contact from './Contact';
+import CompetitiveProgramming from './CompetitiveProgramming';
 
 function CustomCursor() {
   useEffect(() => {
@@ -15,8 +16,8 @@ function CustomCursor() {
       cursor.style.left = `${e.clientX}px`;
       cursor.style.top = `${e.clientY}px`;
     };
-    window.addEventListener('mousemove', moveCursor);
-    return () => window.removeEventListener('mousemove', moveCursor);
+    window.addEventListener('pointermove', moveCursor);
+    return () => window.removeEventListener('pointermove', moveCursor);
   }, []);
   return <div className="custom-cursor"></div>;
 }
@@ -42,13 +43,14 @@ export default function App() {
       <main>
         <div className="reveal"><Home /></div>
         <div className="reveal"><About /></div>
-        <div className="reveal"><Skills /></div>
         <div className="reveal"><Journey /></div>
-        <div className="reveal"><Certifications /></div>
         <div className="reveal"><Projects /></div>
+        <div className="reveal"><Skills /></div>
+        <div className="reveal"><CompetitiveProgramming /></div>
+        <div className="reveal"><Certifications /></div>
         <div className="reveal"><Contact /></div>
       </main>
     </>
   );
 }
-
+

@@ -32,9 +32,9 @@ export default function Header() {
   const links = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
-    { href: "#skills", label: "Skills" },
     { href: "#journey", label: "Journey" },
     { href: "#projects", label: "Projects" },
+    { href: "#skills", label: "Skills" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -60,4 +60,4 @@ export default function Header() {
       </nav>
     </header>
   );
-}
+}

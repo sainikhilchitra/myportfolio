@@ -4,19 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Certifications() {
   const achievements = [
     {
-      title: "LeetCode 1750+ Rating",
-      desc: "Solved 300+ problems; achieved Top 9% globally.",
-      icon: "⚡"
-    },
-    {
       title: "Hackathon Runner-up",
       desc: "DataScix National Hackathon 2026.",
       icon: "🥈"
-    },
-    {
-      title: "CodeChef 2-Star",
-      desc: "Max Rating 1422.",
-      icon: "🏆"
     },
     {
       title: "Smart Coder Diamond",
