@@ -5,12 +5,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Projects() {
   const projects = [
     {
+      title: "Real-Time Video Anomaly Detection",
+      description: "Built a full-stack surveillance platform for real-time anomaly detection on live and recorded video streams. Designed a frame-level inference pipeline to generate anomaly scores and trigger real-time alerts. Developed an interactive dashboard for anomaly monitoring, history tracking, and user-based validation.",
+      tech: ["React.js", "PostgreSQL", "Python", "PyTorch", "FastAPI"],
+      git: "#",
+      demo: "#",
+      image: "/videoAnomaly.png"
+    },
+    {
       title: "CommitHub",
-      description: "GitHub repository automation platform enabling file management via web interface without local cloning. Dual-auth architecture with GitHub OAuth and App integrations.",
-      tech: ["Node.js", "Express", "MongoDB", "GitHub API"],
+      description: "Built a full-stack repository automation platform with GitHub OAuth and GitHub App integration. Developed a 16-endpoint REST API backend for automated commit messages, PR descriptions, and code review workflows.",
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "GitHub API"],
       git: "https://github.com/sainikhilchitra/commit-hub",
       demo: "https://commithub.vercel.app",
       image: "/CommitHub.png"
+    },
+    {
+      title: "StockStream",
+      description: "Built a cloud-native platform to process live stock and cryptocurrency market data using WebSocket streams. Designed an event-driven pipeline using GCP Pub/Sub, Cloud Functions, and BigQuery for scalable real-time analytics. Developed ML-based price forecasting and visualized live insights through a React dashboard.",
+      tech: ["GCP", "BigQuery", "React.js", "Node.js", "BigQuery ML"],
+      git: "#",
+      demo: "#",
+      image: "/stockStream.png"
     },
     {
       title: "Trip Scheduler",
@@ -19,14 +35,6 @@ export default function Projects() {
       git: "https://github.com/sainikhilchitra/trip-scheduler",
       demo: "https://scheduleyourtrip.vercel.app",
       image: "/TripScheduler.png"
-    },
-    {
-      title: "HealthKey",
-      description: "A Digital Health Passport System for digitizing and managing patient medical records. Organizes health data visit-wise and generates concise summaries of medical reports to simplify record retrieval and clinical review.",
-      tech: ["React.js", "Node.js", "Express", "MongoDB"],
-      git: "https://github.com/sainikhilchitra/Health-Passport",
-      demo: "https://health-1-0.onrender.com",
-      image: "/HealthPassport.png"
     }
   ];
 

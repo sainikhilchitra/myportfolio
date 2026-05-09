@@ -10,7 +10,7 @@ export default function About() {
         <div className="about-card glass-effect">
           <h3>My Journey</h3>
           <p>
-            I'm a Computer Science graduate with a deep passion for building 
+            I'm a Computer Science student with a deep passion for building 
             impactful software. My journey in tech is driven by a curiosity 
             to understand how systems work and a desire to create seamless 
             digital experiences.

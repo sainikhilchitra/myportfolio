@@ -7,16 +7,16 @@ export default function CompetitiveProgramming() {
     {
       platform: "LeetCode",
       icon: faCode,
-      mainStat: "340+",
+      mainStat: "400+",
       subStat: "PROBLEMS SOLVED",
-      footer: "Rating: 1744 | 46 Contests"
+      footer: "Rating: 1744 | 45+ Contests"
     },
     {
       platform: "CodeChef",
       icon: faStar,
       mainStat: "2-Star",
       subStat: "COMPETITOR",
-      footer: "Max Rating: 1423 | 32 Contests"
+      footer: "Max Rating: 1422"
     },
     {
       platform: "Codeforces",

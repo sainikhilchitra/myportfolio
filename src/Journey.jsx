@@ -4,27 +4,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Journey() {
   const experience = [
     {
-      title: "Software Development Engineer (SDE Intern)",
+      title: "Software Development Engineer Intern",
       company: "Sentiantal Private Limited",
       location: "Hyderabad, Telangana",
-      date: "Jan 2026 – Present",
+      date: "Jan - May 2026",
       desc: [
-        "Improved HR interview module by fixing UI issues in audio/video sessions, ensuring smooth real-time experience across 100+ runs.",
-        "Supported 100+ interview sessions, stabilizing system performance under real usage.",
-        "Built dashboards for performance tracking, user management, and leaderboards.",
-        "Designed a rule-based DSA evaluation system with penalties for AI usage, hints, and time.",
-        "Contributed to a deployed platform currently used by 38+ users.",
+        "Built backend systems with role-based access control (RBAC) for secure admin and branch-level data management.",
+        "Developed analytics dashboards for student performance tracking and automated evaluation workflows.",
+        "Designed an LLM-based resume parsing pipeline for automated candidate data extraction and processing.",
+        "Optimized HR interview workflows and resolved critical evaluation pipeline issues to improve system stability.",
       ],
-      tech: ["React.js", "Analytics", "Data Structures", "System Design"],
+      tech: ["React.js", "Node.js", "System Design", "LLMs"],
     },
     {
       title: "DSA Mentor",
       company: "Smart Interviews",
       location: "Hyderabad, Telangana",
-      date: "Feb 2026 – Present",
+      date: "Feb 2026",
       desc: [
-        "Assisted in conducting 5 offline DSA sessions for batches of 130+ students, supporting faculty-led instruction and clarifying student doubts in real time.",
-        "Guided students through problem-solving approaches and debugging techniques, helping improve understanding of core algorithmic concepts.",
+        "Mentored students in Data Structures & Algorithms through structured problem-solving guidance.",
       ],
       tech: ["Algorithms", "Problem Solving", "Mentorship", "C/Java"],
     },

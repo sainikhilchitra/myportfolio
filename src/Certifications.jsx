@@ -5,32 +5,37 @@ export default function Certifications() {
   const achievements = [
     {
       title: "Hackathon Runner-up",
-      desc: "DataScix National Hackathon 2026.",
+      desc: "DataScix National Hackathon 2025.",
       icon: "🥈"
     },
     {
       title: "Smart Coder Diamond",
-      desc: "Diamond Certificate (1100/50k).",
+      desc: "Ranked 1400/54k in SI 2026.",
       icon: "💎"
     }
   ];
 
   const certificates = [
     {
+      title: "EF SET English Certificate",
+      issuer: "EF SET",
+      date: "Jan 2026"
+    },
+    {
       title: "Machine Learning",
       issuer: "IIT Madras",
       date: "April 2025"
+    },
+    {
+      title: "Frontend Development with JavaScript",
+      issuer: "TASK",
+      date: "March 2025"
     },
     {
       title: "DSA using Java",
       issuer: "IIT Kharagpur",
       date: "October 2024",
       note: "Top 5%"
-    },
-    {
-      title: "Programming in C",
-      issuer: "IIT Kharagpur",
-      date: "April 2024"
     }
   ];
 
